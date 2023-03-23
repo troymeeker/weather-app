@@ -1,5 +1,5 @@
 import './App.css';
-import Search from './Components/Search';
+import Search from './Components/search';
 
 function App() {
 
@@ -7,6 +7,7 @@ function App() {
   const handleOnSearchChange = (searchData) => {
     console.log(searchData);
   }
+
   return (
     <div className='container'>
        <Search onSearchChange={handleOnSearchChange}/>
