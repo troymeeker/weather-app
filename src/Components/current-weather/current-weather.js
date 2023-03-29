@@ -9,7 +9,7 @@ const CurrentWeather = () => {
             
             
             </div>
-            <img alt="weather" className="weather-icon" src=""/>
+            <img alt="weather" className="weather-icon" src="icons/01d.png"/>
         </div>
     );
 }
