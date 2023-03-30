@@ -5,7 +5,6 @@ import CurrentWeather from './Components/current-weather/current-weather';
 
 function App() {
 
-
   const handleOnSearchChange = (searchData) => {
     console.log(searchData);
   }
