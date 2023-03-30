@@ -1,0 +1,35 @@
+.weather {
+  width: 300px;
+  border-radius: 6px;
+  box-shadow: 10px -2px 20px 2px #888;
+  margin-left: 2vw;
+  padding: 0px 20px 20px 20px;
+  background-color: #333;
+  color: #fff;
+  margin: 10px auto;
+  
+
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.city{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    margin: 1em;
+    letter-spacing: .8px;
+
+}
+.curr-weather-desc{
+    font-weight: 350;
+    font-size: 15px;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: .4px;
+}
+
+.weather-icon{
+    width: 110px;
+}
