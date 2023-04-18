@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const CurrentWeather = () => {
 
-  const [state, setState] = useState('Fahrenheit')
+  const [state, setState] = useState()
 
   function handleConvert({state}){
     setState('Celsius')
@@ -29,11 +29,19 @@ const CurrentWeather = () => {
             <div className="param-label">Details</div>
           </div>
           <div className="param-row">
-            <div className="param-label">Feels like:</div>
-            <div className="param-value">74°F</div>
+            <span className="param-label">Feels like:  </span>
+            <span className="param-value" > 74°F</span>
+          </div>
+          <div className="param-row">
+            <span className="param-label">Wind:  </span>
+            <span className="param-value" > 2mph NW</span>
+          </div>
+          <div className="param-row">
+            <span className="param-label">Humidity:  </span>
+            <span className="param-value" > 20%</span>
           </div>
         </div>
-        <button className="convert" onClick={handleConvert}>Convert to {state}</button>
+        <button className="convert" onClick={handleConvert}>Convert to Metric</button>
       </div>
    
     </div>
