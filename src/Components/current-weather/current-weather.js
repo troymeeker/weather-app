@@ -22,8 +22,8 @@ const CurrentWeather = () => {
         </div>
       </div>
       <div className="bottom">
-        <p className="temp-f">75°F</p>
-        {/* <p className="temp-c">0°C</p> */}
+        <p className="temp">75°F</p>
+       
         <div className="details">
           <div className="param-row">
             <div className="param-label">Details</div>
@@ -41,7 +41,7 @@ const CurrentWeather = () => {
             <span className="param-value" > 20%</span>
           </div>
         </div>
-        <button className="convert" onClick={handleConvert}>Convert to Metric</button>
+        {/* <button className="convert" onClick={handleConvert}>Convert to Metric</button> */}
       </div>
    
     </div>

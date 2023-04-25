@@ -13,6 +13,12 @@
 .top, .bottom{
     display: flex;
     justify-content: space-between;
+   
+}
+.bottom{
+    margin: 0 10px;
+  
+   
 }
 .city{
     font-weight: 600;
@@ -38,7 +44,15 @@
     margin:4px;
     width:85px;
     background-color: #b8b5b5;
-
     border-radius: 6px;
 
+}
+
+.temp{
+font-weight:900;
+font-size:40px;
+padding: 3px;
+width: auto;
+position: relative;
+bottom: 35px;
 }
