@@ -34,7 +34,7 @@ const CurrentWeather = () => {
           </div>
           <div className="param-row">
             <span className="param-label">Wind:  </span>
-            <span className="param-value" > 2mph NW</span>
+            <span className="param-value">  2mph NW</span>
           </div>
           <div className="param-row">
             <span className="param-label">Humidity:  </span>
