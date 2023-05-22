@@ -1,7 +1,7 @@
 import "./current-weather.css";
 import { useState } from "react";
 
-const CurrentWeather = () => {
+const CurrentWeather = ({data}) => {
 
   const [state, setState] = useState()
 

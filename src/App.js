@@ -23,7 +23,7 @@ function App() {
       `${weather_api_url}/forecast?lat=${lat}&lon=${lon}&appid=${weather_api_key}`
     );
 
-    Promise.all([currentWeatherFetch, forecastWeatherFetch]
+    Promise.all([currentWeatherFetch, forecastWeatherFetch])
       .then(async (resp) => {
         const weatherResp = await resp[0].json();
         const forecastResp = await resp[1].json();
@@ -31,10 +31,12 @@ function App() {
         setForecast({ city: searchData.label, ...forecastResp});
 
       })
-      .catch((err) => console.log(err))
-        )
+      .catch((err) => console.log(err));
+        
 
   }; 
+  console.log(currentWeather);
+  console.log(forecast);
 
   return (
     <div className="container">
