@@ -5,20 +5,19 @@ const CurrentWeather = ({data}) => {
 
   const [state, setState] = useState()
 
-  function handleConvert({state}){
-    setState('Celsius')
+  // function handleConvert({state}){
+  //   setState('Celsius')
     
-  }
+  // }
   return (
     <div className="weather">
        
       <div className="top">
       
-        
-        <img alt="weather" className="weather-icon" src="icons/01d.png" />
+        <img alt="weather" className="weather-icon" src={`icons/${data.weather[0].icon}.png`} />
         <div>
-          <p className="city">City Name </p>
-          <p className="curr-weather-desc">Weather Description </p>
+          <p className="city">{data.city} </p>
+          <p className="curr-weather-desc">{data.weather[0].description} </p>
         </div>
       </div>
       <div className="bottom">

@@ -42,7 +42,7 @@ function App() {
     <div className="container">
       <DarkToggle />
       <Search onSearchChange={handleOnSearchChange} />
-      <CurrentWeather />
+      { currentWeather && <CurrentWeather data={currentWeather} />}
     </div>
   );
 }
