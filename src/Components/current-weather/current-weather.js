@@ -17,11 +17,11 @@ const CurrentWeather = ({data}) => {
         <img alt="weather" className="weather-icon" src={`icons/${data.weather[0].icon}.png`} />
         <div>
           <p className="city">{data.city} </p>
-          <p className="curr-weather-desc">{data.weather[0].description} </p>
+          <p className="curr-weather-desc">{data.weather[0].main} </p>
         </div>
       </div>
       <div className="bottom">
-        <p className="temp">75°F</p>
+        <p className="temp">{Math.round(data.main.temp)}°F</p>
        
         <div className="details">
           <div className="param-row">
@@ -29,15 +29,15 @@ const CurrentWeather = ({data}) => {
           </div>
           <div className="param-row">
             <span className="param-label">Feels like:  </span>
-            <span className="param-value" > 74°F</span>
+            <span className="param-value" > {Math.round(data.main.feels_like)}°F</span>
           </div>
           <div className="param-row">
             <span className="param-label">Wind:  </span>
-            <span className="param-value">  2mph NW</span>
+            <span className="param-value">  {Math.round(data.wind.speed)}mph</span>
           </div>
           <div className="param-row">
             <span className="param-label">Humidity:  </span>
-            <span className="param-value" > 20%</span>
+            <span className="param-value" > {Math.round(data.main.humidity)}%</span>
           </div>
         </div>
         {/* <button className="convert" onClick={handleConvert}>Convert to Metric</button> */}

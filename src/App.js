@@ -16,11 +16,11 @@ function App() {
     const [lat, lon] = searchData.value.split(" ");
 
     const currentWeatherFetch = fetch(
-      `${weather_api_url}/weather?lat=${lat}&lon=${lon}&appid=${weather_api_key}`
+      `${weather_api_url}/weather?lat=${lat}&lon=${lon}&appid=${weather_api_key}&units=imperial`
     );
 
     const forecastWeatherFetch = fetch(
-      `${weather_api_url}/forecast?lat=${lat}&lon=${lon}&appid=${weather_api_key}`
+      `${weather_api_url}/forecast?lat=${lat}&lon=${lon}&appid=${weather_api_key}&units=imperial`
     );
 
     Promise.all([currentWeatherFetch, forecastWeatherFetch])
