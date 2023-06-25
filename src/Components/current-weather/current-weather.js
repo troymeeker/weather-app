@@ -1,14 +1,9 @@
 import "./current-weather.css";
-import { useState } from "react";
+
 
 const CurrentWeather = ({data}) => {
 
-  const [state, setState] = useState()
 
-  // function handleConvert({state}){
-  //   setState('Celsius')
-    
-  // }
   return (
     <div className="weather">
        

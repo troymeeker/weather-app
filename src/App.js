@@ -1,7 +1,7 @@
 import "./App.css";
 import Search from "./Components/search/search";
 import CurrentWeather from "./Components/current-weather/current-weather";
-import DarkToggle from "./darkToggle";
+// import DarkToggle from "./darkToggle";
 import { weather_api_key } from "./api";
 import { weather_api_url } from "./api";
 import { useState } from "react";
@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="container">
-      <DarkToggle />
+      {/* <DarkToggle /> */}
       <Search onSearchChange={handleOnSearchChange} />
       { currentWeather && <CurrentWeather data={currentWeather} />}
     </div>
